@@ -44,6 +44,8 @@ public class BarCodesController {
                     return ok(barcodeGenerator.generateCode39BarcodeImage(barcodeText));
                 case "GTIN":
                     return ok(barcodeGenerator.generateGlobalTradeItemNumberBarcodeImage(barcodeText));
+                case "PDF417":
+                    return ok(barcodeGenerator.generatePDF417BarcodeImage(barcodeText));
                 default:
                     return null;
             }

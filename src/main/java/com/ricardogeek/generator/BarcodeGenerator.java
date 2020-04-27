@@ -63,4 +63,11 @@ public class BarcodeGenerator {
 
         return BarcodeImageHandler.getImage(barcode);
     }
+
+    public BufferedImage generatePDF417BarcodeImage(final String barcodeText) throws Exception {
+        final Barcode barcode = BarcodeFactory.createPDF417(barcodeText);
+        barcode.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 12));
+
+        return BarcodeImageHandler.getImage(barcode);
+    }
 }
