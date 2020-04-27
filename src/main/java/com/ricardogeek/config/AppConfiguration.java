@@ -1,6 +1,7 @@
 package com.ricardogeek.config;
 
 import com.ricardogeek.generator.BarcodeGenerator;
+import com.ricardogeek.generator.QrCodeGenerator;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
@@ -21,5 +22,10 @@ public class AppConfiguration {
     @Bean
     public BarcodeGenerator getBarcodeGenerator() {
         return new BarcodeGenerator();
+    }
+
+    @Bean
+    public QrCodeGenerator getQrCodeGenerator() {
+        return new QrCodeGenerator();
     }
 }

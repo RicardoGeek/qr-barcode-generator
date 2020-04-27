@@ -4,9 +4,7 @@ import java.awt.Font;
 import net.sourceforge.barbecue.Barcode;
 import net.sourceforge.barbecue.BarcodeFactory;
 import net.sourceforge.barbecue.BarcodeImageHandler;
-
 import java.awt.image.BufferedImage;
-import java.nio.Buffer;
 
 public class BarcodeGenerator {
 
