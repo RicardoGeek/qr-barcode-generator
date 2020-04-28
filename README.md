@@ -33,3 +33,7 @@ Generates a QRCode taking the following parameters into consideration:
 **height** the resulting inage height
 
 *Example:* http://localhost:8080/qrcodes/www.googe.com/350/350
+
+This code is referenced in my recent blog entry:
+
+https://ricardogeek.com/como-generar-codigos-de-barras-y-qr-en-java/
